@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="clienteStyle.css"rel="stylesheet">
+    <<link rel="stylesheet" href="tenderoStyle.css">
+    <title>CLIENTE</title>
+  </head>
+  <body >
+
+  <div class="menu">
+    <h5 id="menuTitulo">MENU</h5>
+    <div class="productosAgregadosR">
+      <input type="image" src="productosAgregados.png" id="productosAgregados" onclick="cambiarImagen()">
+      <b id="productoAT">PRODUCTOS AGREGADOS</b>
+    </div>
+    <div class="historialConsultasR">
+      <input type="image" src="historialConsultas.png" id="historialConsultas" >
+      <b id="historialCT">HISTORIAL DE CONSULTAS</b>
+    </div>
+    <div class="editarPerfilR">
+      <input type="image" src="editarPerfil.png" id="editarPerfil" >
+      <b id="editarPT">EDITAR PERFIL</b>
+    </div>
+    <div class="configuracionesR">
+      <input type="image" src="configuraciones.png" id="configuraciones" >
+      <b id="configuracionesT">CONFIGURACIONES</b>
+    </div>
+    <div class="ayudaR">
+      <input type="image" src="ayuda.png" id="ayuda" >
+      <b id="ayudaT">AYUDA</b>
+    </div>
+  </div>
+  <div class="insertarProductos">
+    <form action="/agregarProducto" method="post">
+    <input type="text" id="nombreP" name="nombreP" placeholder="NOMBRE PRODUCTO">
+    <input type="text" id="precioP" name="precioP" placeholder="PRECIO DEL PRODUCTO">
+    <input type="text" id= "cantidadP" name="cantidadP" placeholder="CANTIDAD DEL PRODUCTO">
+    <input type="text" id= "descripcionP" name="descripcionP" placeholder="DESCRIPCIÓN DEL PROUCTO">
+    <button id="registrar">agregar</button>
+    </form>
+    </div>
+
+    <div class="tabla">
+      <table class="tabal1">
+        <thead>
+          <tr>
+            <th>NOMBRE</th>
+            <th>PRECIO</th>
+            <th>CANTIDAD</th>
+            <th>DESCRIPCIÓN</th>
+          </tr>
+          <% for (var i = 0; i < productos.length; i++) {%>
+              <tr>
+                <td>
+                  <strong>
+                    <%=productos[i].nombreP %>
+                  </strong>
+                </td>
+                <td>
+                  <%=productos[i].precioP %>
+                </td>
+                <td>
+                  <%=productos[i].cantidadP%>
+                </td>
+                <td>
+                  <%=productos[i].descripcionP%>
+                </td>
+                <td>
+                  <a href="/delete/<%=productos[i].nombreP%>">ELIMINAR</a>
+                </td>
+
+
+              </tr>
+            <%}%>
+        </thead>
+      </table>
+    </div>
+    <div class="productosCargados">
+    </div>
+
+  </body>
+  <script src="prueba.js"></script>
+</html>
