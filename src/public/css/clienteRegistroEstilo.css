@@ -1,0 +1,82 @@
+.rectanngulo{
+  position: absolute;
+  width: 294px;
+  height: 660px;
+  left: 0px;
+  top: 0px;
+
+  background: #3A2E97;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0px 0px 10px;
+}
+.registroCliente{
+  position: absolute;
+  width: 593px;
+  height: 566px;
+  left: 357px;
+  top: 60px;
+
+  background: #FFFFFF;
+  border: 1px solid #FDFDFD;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px 10px 0px;
+}
+input{
+
+  position: absolute;
+  width: 271px;
+  height: 44px;
+
+
+  background: #F8F2F2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#nombreC{
+  left: 163px;
+  top: 60px;
+}
+#correoC{
+  left: 163px;
+  top: 140px;
+}
+#usuarioC{
+  left: 163px;
+  top: 210px;
+}
+#contrasenaC{
+  left: 163px;
+  top: 300px;
+}
+#contrasenaCC{
+  left: 163px;
+  top: 400px;
+}
+#ingresar{
+  position: absolute;
+  width: 222px;
+  height: 53px;
+  left: 163px;
+  top: 500px;
+
+  background: #E25D41;
+  border-radius: 20px;
+}
+h5{
+  position: absolute;
+width: 500px;
+height: 19px;
+left: 100px;
+top: 10px;
+
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 17px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
